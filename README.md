@@ -6,7 +6,7 @@ A toxicophore is a molecular substructure known to be associated with toxic acti
 # Main Goals: 
 1. Input a Molecules: Molecules input is given in the form of SMILES:
 2. Search for known toxicophores within the molecule.
-3. Flag toxic risk if any are found [3=high, 2=moderate, 1=low]
+3. Flag toxic risk if any are found [red=high, yello=moderate, green=low]
 4. Output the risk level, toxicophore names, or highlight them.
 
 # Workflow Description: 
