@@ -1,5 +1,4 @@
-# Toxic
-A Toxicophore Analyzer and Risk Detector 
+# RiskLens - Toxicophore Analyzer and Risk Detector 
 
 A toxicophore is a molecular substructure known to be associated with toxic activity. This tool is based of the dataset from # Balaji S. Metabophore-mediated retro-metabolic ('MeMeReMe') approach in drug design. Drug Discov Today. 2023 Oct;28(10):103736. doi: 10.1016/j.drudis.2023.103736. Epub 2023 Aug 14. PMID: 37586644.
 
