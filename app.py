@@ -2,13 +2,11 @@ import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import Draw
 
-# --- Toxicophore Patterns ---
+# Toxicophore Patterns 
 TOXICOPHORES = [
     {"name": "Aromatic Nitro", "smarts": "[NX3](=O)=O", "risk": "High"},
     {"name": "Aniline", "smarts": "c1ccc(cc1)N", "risk": "Moderate"},
-    {"name": "Epoxide", "smarts": "C1OC1", "risk": "High"},
-    # Add more patterns here
-]
+    {"name": "Epoxide", "smarts": "C1OC1", "risk": "High"},]
 
 RISK_LEVELS = {"High": "🔴 High", "Moderate": "🟡 Moderate", "None": "🟢 None"}
 
@@ -30,8 +28,8 @@ def analyze(smiles):
 
     return RISK_LEVELS[max_risk], [m["name"] for m in matches], mol
 
-# --- Streamlit UI ---
-st.title("☠️ Toxic: Toxicophore Analyzer")
+# Streamlit UI
+st.title("Toxic: Toxicophore Analyzer")
 
 smiles = st.text_input("Enter a SMILES string:")
 if smiles:
